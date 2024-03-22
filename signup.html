@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Planning Form</h1>
+    </header>
+
+    <form id="eventForm">
+        <label for="eventName">Event Name:</label>
+        <select name="eventName" id="eventName" required>
+            <option value="Invaild">Select any one</option>
+            <option value="Hindi Compitiation">Wedding</option>
+            <option value="ISC">Birthday</option>
+            <option value="Hacker Rank Hackthon">Engagemeent</option>
+            <option value="Debet">Seminar</option>
+            <option value="Group Dissusion">Group Party</option>
+            <option value="Food">Catering</option>
+            <option value="Seminar">Others</option>
+        </select>
+        <!-- <input type="select" id="eventName" name="eventName" required> -->
+        
+
+        <label for="dateTimeLocal">Event Date:</label>
+        <input type="datetime-local" id="dateTimeLocal" name="dateTimeLocal" required>
+
+        <label for="eventLocation">Event Location:</label>
+        <input type="text" id="eventLocation" name="eventLocation" required>
+        <button onclick="submitForm()" class="btn">Book</button>
+    </form>
+
+    <script src="sign.js">
+        
+    </script>
+
+</body>
+</html>
